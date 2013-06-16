@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<head>
+	<title>CSS3 Preloader</title>
+	<meta charset="utf-8">
+	
+	<style>
+		body{
+			background: #000;
+			padding-top: 10%;
+		}
+		.circle_skin{
+			border: 5px solid #3F89C3;
+			border-top: 5px solid #000;
+			border-left: 5px solid #000;
+			border-radius: 50px;
+			margin: 0 auto;
+			opacity: 0.8;
+		}
+		.circle_one {
+			box-shadow: 0 0 20px #3F89C3;
+			height: 70px;
+			-moz-animation: spin 0.7s infinite linear;
+			-webkit-animation: spin 0.7s infinite linear;
+			width: 70px;
+		}
+		.circle_two {
+			box-shadow: 0 0 20px #3F89C3;
+			height: 50px;
+			position: relative;
+			top: -70px;
+			-moz-animation: spinoff 0.6s infinite linear;
+			-webkit-animation: spinoff 0.6s infinite linear;
+			width: 50px;			
+		}
+
+		.circle_three {
+			box-shadow: 0 0 15px #3F89C3; 
+			height: 30px;
+			position: relative;
+			top: -120px;
+			-moz-animation: spin 0.5s infinite linear;
+			-webkit-animation: spin 0.5s infinite linear;
+			width: 30px;			
+		}
+		@-moz-keyframes spin {
+			0% { -moz-transform:rotate(0deg); }
+			100% { -moz-transform:rotate(360deg); }
+		}
+		@-moz-keyframes spinoff {
+			0% { -moz-transform:rotate(0deg); }
+			100% { -moz-transform:rotate(-360deg); }
+		}
+		@-webkit-keyframes spin {
+			0% { -webkit-transform:rotate(0deg); }
+			100% { -webkit-transform:rotate(360deg); }
+		}
+		@-webkit-keyframes spinoff {
+			0% { -webkit-transform:rotate(0deg); }
+			100% { -webkit-transform:rotate(-360deg); }
+		}
+	</style>
+</head>
+
+<body>
+<div class="container">
+    <div class="circle_skin circle_one"></div>
+    <div class="circle_skin circle_two"></div>
+    <div class="circle_skin circle_three"></div>
+</div>
+
+</body>
+</html>
